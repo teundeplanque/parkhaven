@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Parkhaven Bedrijfsopvolging | Teun de Planque</title>
+<meta name="description" content="Teun de Planque zoekt één Nederlands MKB-bedrijf om over te nemen en zelf te leiden. Voor de lange termijn, gefinancierd met eigen vermogen en bankfinanciering, met één beslisser.">
+<meta property="og:title" content="Parkhaven Bedrijfsopvolging">
+<meta property="og:description" content="Ik zoek één bedrijf om zelf te leiden. Voor de lange termijn.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://parkhavenopvolging.nl/">
+<meta property="og:image" content="https://parkhavenopvolging.nl/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Teun de Planque aan het water in de haven">
+<meta property="og:locale" content="nl_NL">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/serif-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/serif-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face{font-family:'Parkhaven Serif';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/serif-400-normal.woff2) format('woff2')}
+  @font-face{font-family:'Parkhaven Serif';font-style:italic;font-weight:400;font-display:swap;src:url(assets/fonts/serif-400-italic.woff2) format('woff2')}
+  @font-face{font-family:'Parkhaven Serif';font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/serif-500-normal.woff2) format('woff2')}
+  :root{
+    --ink:#132f45;        /* havenblauw */
+    --ink-soft:#2c4a61;
+    --paper:#f6f2ea;      /* warm gebroken wit */
+    --paper-2:#efe9de;
+    --line:#ddd4c4;
+    --brass:#7a5a28;      /* accent */
+    --text:#1f2a33;
+    --muted:#5b6670;
+    --serif:"Parkhaven Serif","Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --max:1120px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:88px}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  :focus-visible{outline:3px solid var(--brass);outline-offset:3px;border-radius:2px}
+  .contact :focus-visible,.proof :focus-visible{outline-color:#e3c38e}
+  .skip{position:absolute;left:12px;top:-60px;z-index:20;background:var(--ink);color:#fff;padding:10px 16px;border-radius:2px;text-decoration:none}
+  .skip:focus{top:12px;color:#fff}
+  body{margin:0;background:var(--paper);color:var(--text);font-family:var(--sans);font-size:18.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:var(--ink);text-underline-offset:3px}
+  a:hover{color:var(--brass)}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+  h1,h2,h3{font-family:var(--serif);color:var(--ink);font-weight:500;line-height:1.2;margin:0}
+  h2{font-size:clamp(30px,3.6vw,42px);margin-bottom:22px}
+  h3{font-size:22px;margin-bottom:8px}
+  p{margin:0 0 18px}
+  .eyebrow{font-family:var(--sans);font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-bottom:14px;display:block}
+  .lead{font-size:21px;color:var(--ink-soft)}
+  section{padding:96px 0;border-top:1px solid var(--line)}
+  /* placeholder-markering: verwijderen zodra ingevuld */
+  .ph{background:#fff1b8;color:#5a4300;border-radius:3px;padding:0 4px;font-style:normal}
+
+  /* header */
+  header{position:sticky;top:0;z-index:10;background:rgba(246,242,234,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;line-height:1.1}
+  .brand .mark{height:42px;width:auto;flex:none}
+  .brand .bt{display:flex;flex-direction:column}
+  .brand b{font-family:var(--serif);font-weight:500;font-size:24px;color:var(--ink);letter-spacing:.01em}
+  .brand .bt > span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+  .nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+  .nav ul a{text-decoration:none;font-size:15.5px;color:var(--ink-soft)}
+  .nav .call{font-size:15.5px;text-decoration:none;border:1px solid var(--ink);padding:9px 16px;border-radius:2px;white-space:nowrap}
+  .nav .call .short{display:none}
+  @media (max-width:420px){.nav .call .long{display:none}.nav .call .short{display:inline}}
+  .nav .call:hover{background:var(--ink);color:var(--paper)}
+
+  /* hero */
+  .hero{padding:72px 0 88px;border-top:0}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+  .hero h1{font-size:clamp(40px,4.8vw,56px);letter-spacing:-.01em;margin-bottom:26px}
+  .hero .lead{max-width:34em;margin-bottom:34px}
+  .cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .btn{display:inline-block;background:var(--ink);color:var(--paper);text-decoration:none;padding:15px 24px;border-radius:2px;font-size:16.5px;font-weight:500}
+  .btn:hover{background:var(--ink-soft);color:var(--paper)}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+  .btn.ghost:hover{background:var(--ink);color:var(--paper)}
+  .quick{font-size:15px;color:var(--ink-soft);margin-top:22px;padding-top:16px;border-top:1px solid var(--line);line-height:1.6}
+  .quick b{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);margin-right:8px}
+  .note{font-size:15px;color:var(--muted);margin-top:18px}
+  .portrait{aspect-ratio:4/5;background:linear-gradient(160deg,#d9cfbd,#c7baa3);border-radius:2px;position:relative;overflow:hidden;display:flex;align-items:flex-end}
+  .portrait img{width:100%;height:100%;object-fit:cover;display:block}
+  .portrait .ph-photo{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--serif);color:#6d5f47;font-size:20px;text-align:center;padding:24px}
+  .portrait figcaption{position:relative;background:rgba(19,47,69,.88);color:var(--paper);width:100%;padding:14px 18px;font-size:14.5px}
+
+  /* proof strip */
+  .proof{background:var(--ink);color:var(--paper);padding:0;border:0}
+  .proof-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+  .proof-item{padding:38px 32px;border-left:1px solid rgba(246,242,234,.15)}
+  .proof-item:first-child{border-left:0}
+  .proof-item b{display:block;font-family:var(--serif);font-weight:500;font-size:22px;margin-bottom:6px;color:#fff}
+  .proof-item span{font-size:15.5px;color:#c9d3db;line-height:1.5;display:block}
+
+  /* letter */
+  .letter{max-width:720px;margin:0 auto}
+  .letter p{font-family:var(--serif);font-size:21px;line-height:1.7;color:#24323d}
+  .letter .salut{font-style:italic}
+  .sign{margin-top:30px}
+  .sign .sig{font-family:var(--serif);font-style:italic;font-size:38px;color:var(--ink);line-height:1}
+  .sign small{display:block;font-family:var(--sans);font-size:14.5px;color:var(--muted);margin-top:8px}
+
+  .wide-photo{margin:8px auto 40px;max-width:var(--max)}
+  .wide-photo img{width:100%;height:auto;display:block;border-radius:2px}
+  ul.facts{list-style:none;margin:56px auto 0;padding:28px 0 0;max-width:var(--max);display:grid;grid-template-columns:repeat(3,1fr);gap:24px;border-top:1px solid var(--line)}
+  ul.facts li{font-size:15.5px;color:var(--muted);line-height:1.45}
+  ul.facts b{display:block;font-family:var(--serif);font-weight:500;font-size:21px;color:var(--ink);margin-bottom:4px}
+  @media (max-width:900px){ul.facts{grid-template-columns:1fr 1fr}}
+
+  /* two-col blocks */
+  .split{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+  @media (min-width:901px){.split > div:first-child{position:sticky;top:110px}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:2px;padding:34px 36px}
+  dl.criteria{margin:0;display:grid;grid-template-columns:150px 1fr;row-gap:16px;column-gap:24px}
+  dl.criteria dt{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600;padding-top:4px}
+  dl.criteria dd{margin:0}
+  .less{margin-top:26px;padding-top:22px;border-top:1px dashed var(--line)}
+  .less h3{font-size:19px}
+  .less ul{margin:0;padding-left:20px;color:var(--muted)}
+
+  .helm-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  .helm-photo{margin:0}
+  .helm-photo img{width:100%;height:auto;display:block;border-radius:2px}
+  .helm-grid p{font-size:18.5px;color:#2b3943}
+  .finance-text{border-left:3px solid var(--brass);padding-left:28px}
+  .finance-text p{font-size:19px;color:#2b3943}
+  .finance-text p:last-child{font-weight:600;color:var(--ink);margin-bottom:0}
+
+  /* promises */
+  .promises{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:18px}
+  .promise{border-top:2px solid var(--brass);padding-top:18px}
+  .promise p{font-size:17px;color:var(--muted);margin:0}
+
+  /* steps */
+  ol.steps{list-style:none;margin:16px 0 0;padding:0;counter-reset:s}
+  ol.steps li{counter-increment:s;display:grid;grid-template-columns:72px minmax(0,1fr) 240px;gap:20px;padding:24px 0;border-bottom:1px solid var(--line);align-items:baseline}
+  ol.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--serif);font-size:30px;color:var(--brass)}
+  ol.steps li p{margin:0;color:var(--muted);font-size:17px}
+  ol.steps .time{font-size:14.5px;color:var(--ink-soft);text-align:right;white-space:nowrap}
+
+  /* faq */
+  .faq details,.faq h2{max-width:860px}
+  details{border-bottom:1px solid var(--line);padding:4px 0}
+  summary{cursor:pointer;list-style:none;font-family:var(--serif);font-size:22px;color:var(--ink);padding:18px 40px 18px 0;position:relative}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";position:absolute;right:4px;top:14px;font-family:var(--sans);font-size:26px;color:var(--brass);font-weight:300}
+  details[open] summary::after{content:"–"}
+  details p{color:#3b4852;font-size:17.5px;max-width:44em}
+
+  /* advisers */
+  .advisers,.alt{background:var(--paper-2)}
+  .adv-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .checks{list-style:none;padding:0;margin:0}
+  .checks li{padding:12px 0 12px 32px;border-bottom:1px solid var(--line);position:relative;font-size:17.5px}
+  .checks li::before{content:"";position:absolute;left:2px;top:21px;width:14px;height:8px;border-left:2px solid var(--brass);border-bottom:2px solid var(--brass);transform:rotate(-45deg)}
+
+  /* contact */
+  .contact{background:var(--ink);color:var(--paper);border:0}
+  .contact h2{color:#fff}
+  .contact .lead{color:#c9d3db}
+  .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:end}
+  .contact-lines a{color:#fff;text-decoration:none;display:block;font-family:var(--serif);font-size:clamp(24px,2.6vw,32px);line-height:1.5}
+  .contact-lines a:hover{color:#e3c38e}
+  .contact-lines small{display:block;color:#9fb0bd;font-size:14.5px;margin-top:14px}
+  .contact-lines a.li{font-family:var(--sans);font-size:16px;color:#c9d3db;text-decoration:underline;text-underline-offset:4px;margin-top:6px}
+  .contact .ph{background:#3a5670;color:#fff}
+
+  footer{background:#0e2435;color:#8fa1af;font-size:14px;padding:26px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+  .btn-num{display:none}
+  @media (max-width:600px){
+    .hero h1{font-size:36px;margin-bottom:18px}
+    .hero .lead{font-size:18px;margin-bottom:24px}
+    .cta{flex-direction:column;align-items:stretch;gap:10px}
+    .cta .btn{display:block;width:100%;text-align:center;padding:17px 18px;font-size:17px;min-height:54px}
+    .cta .btn:first-child{background:var(--ink);box-shadow:0 2px 0 rgba(0,0,0,.15)}
+    .cta .btn.ghost{border-width:2px}
+    .btn-num{display:inline}
+  }
+  @media (max-width:360px){.cta .btn{font-size:15px;padding:16px 10px;white-space:nowrap}}
+  @media (max-width:1100px) and (min-width:901px){.promises{grid-template-columns:repeat(2,1fr)}}
+  /* responsive */
+  @media (max-width:900px){
+    body{font-size:18px}
+    .nav{flex-wrap:wrap;height:auto;padding-top:12px;padding-bottom:0;row-gap:8px}
+    .nav ul{order:3;width:calc(100% + 40px);margin:0 -20px;padding:0 20px 10px;gap:20px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+    .nav ul::-webkit-scrollbar{display:none}
+    .nav ul a{font-size:14.5px;padding:6px 0;display:inline-block}
+    html{scroll-padding-top:120px}
+    .nav .call{padding:8px 12px;font-size:14px}
+    .wrap{padding:0 20px}
+    .hero{padding:40px 0 64px}
+    .contact-lines a{font-size:22px;word-break:break-word}
+    .brand b{font-size:21px}
+    .hero-grid,.split,.adv-grid,.contact-grid,.helm-grid{grid-template-columns:1fr;gap:40px}
+    .finance-text{padding-left:20px}
+    .portrait{max-width:420px}
+    .proof-grid,.promises{grid-template-columns:1fr}
+    .brand .mark{height:36px;width:auto}
+    ul.facts{grid-template-columns:1fr}
+    .proof-item{border-left:0;border-top:1px solid rgba(246,242,234,.15);padding:26px 28px}
+    .proof-item:first-child{border-top:0}
+    section{padding:72px 0}
+    ol.steps li{grid-template-columns:56px 1fr}
+    ol.steps .time{grid-column:2;text-align:left}
+    ol.steps li{grid-template-columns:44px minmax(0,1fr)}
+    ol.steps .time{white-space:normal}
+    dl.criteria{grid-template-columns:1fr;row-gap:4px}
+    dl.criteria dd{margin-bottom:14px}
+    .card{padding:26px 24px}
+  }
+  @media print{header{position:static}.proof,.contact{color:#000;background:#fff}}
+</style>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="24384776-9edc-4bda-af31-66932829365b"></script>
+</head>
+<body>
+
+<a class="skip" href="#top">Naar de inhoud</a>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Parkhaven Bedrijfsopvolging">
+      <svg class="mark" viewBox="7.6 5.5 24.8 30.7" aria-hidden="true"><path d="M13.225 19L12.975 24Q13.6 24.4 14.225 24L13.975 19Z" fill="#7b5b3e"/><path d="M26.025 19L25.775 24Q26.4 24.4 27.025 24L26.775 19Z" fill="#7b5b3e"/><path d="M19.625 19L19.375 24.2Q20 24.6 20.625 24.2L20.375 19Z" fill="#7b5b3e"/><ellipse cx="13.6" cy="14.75" rx="2.3" ry="5.75" fill="#86a585"/><clipPath id="hd1"><rect x="13.6" y="0" width="6" height="40"/></clipPath><g clip-path="url(#hd1)"><ellipse cx="13.6" cy="14.75" rx="2.3" ry="5.75" fill="#a2bb9f"/></g><ellipse cx="26.4" cy="14.75" rx="2.3" ry="5.75" fill="#86a585"/><clipPath id="hd2"><rect x="26.4" y="0" width="6" height="40"/></clipPath><g clip-path="url(#hd2)"><ellipse cx="26.4" cy="14.75" rx="2.3" ry="5.75" fill="#a2bb9f"/></g><ellipse cx="20" cy="13.25" rx="2.4" ry="7.25" fill="#3d6b4a"/><clipPath id="hd3"><rect x="20" y="0" width="6" height="40"/></clipPath><g clip-path="url(#hd3)"><ellipse cx="20" cy="13.25" rx="2.4" ry="7.25" fill="#56875f"/></g><path d="M9.2 27.8 c2.40 -2 4.80 -2 7.2 0 c2.40 2 4.80 2 7.2 0 c2.40 -2 4.80 -2 7.2 0" fill="none" stroke="#b08a4c" stroke-width="2.2" stroke-linecap="round" opacity="1"/><path d="M9.2 32.6 c2.40 -2 4.80 -2 7.2 0 c2.40 2 4.80 2 7.2 0 c2.40 -2 4.80 -2 7.2 0" fill="none" stroke="#c9a46a" stroke-width="2.2" stroke-linecap="round" opacity="0.7"/></svg><span class="bt"><b>Parkhaven</b><span>Bedrijfsopvolging</span></span>
+    </a>
+    <ul aria-label="Navigatie">
+      <li><a href="#over">Over mij</a></li>
+      <li><a href="#zoek">Wat ik zoek</a></li>
+      <li><a href="#financiering">Financiering</a></li>
+      <li><a href="#werkwijze">Werkwijze</a></li>
+      <li><a href="#vragen">Vragen</a></li>
+      <li><a href="#adviseurs">Adviseurs</a></li>
+    </ul>
+    <a class="call" href="tel:+31623000934"><span class="long">Bel 06 23 00 09 34</span><span class="short">Bel Teun</span></a>
+  </div>
+</header>
+
+<main id="top" tabindex="-1">
+
+  <!-- 1. Opening -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Ik zoek één bedrijf om zelf te leiden. Voor de lange termijn.</h1>
+        <p class="lead">Ik ben Teun de Planque. Ik neem één gezond Nederlands bedrijf over van een ondernemer die nadenkt over opvolging. Als opvolger die blijft, ook over vijf of tien jaar.</p>
+        <div class="cta">
+          <a class="btn" href="tel:+31623000934">Bel mij direct<span class="btn-num"> · 06 23 00 09 34</span></a>
+          <a class="btn ghost" href="mailto:teun@parkhavenopvolging.nl">Stuur een e-mail</a>
+        </div>
+        <p class="note">Ik neem zelf op. Een eerste gesprek is vrijblijvend en vertrouwelijk.</p>
+        <p class="quick"><b>Zoekprofiel</b> winst (EBITDA) € 0,5 tot 2 miljoen · bij voorkeur zakelijke klanten · heel Nederland · <a href="#financiering">eigen vermogen plus bankfinanciering</a> · <a href="#zoek">alle criteria</a></p>
+      </div>
+      <figure class="portrait" style="margin:0">
+        <img src="assets/teun-960.webp" srcset="assets/teun-600.webp 600w, assets/teun-960.webp 960w" sizes="(max-width:900px) 90vw, 430px" alt="Teun de Planque aan het water in de haven" width="960" height="1200" fetchpriority="high" style="position:absolute;inset:0">
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2. Drie bewijspunten -->
+  <section class="proof" aria-label="Kernpunten">
+    <div class="wrap proof-grid">
+      <div class="proof-item"><b>Financiering zonder fonds</b><span>Ruim €1,5 miljoen eigen middelen, aangevuld met bankfinanciering.</span></div>
+      <div class="proof-item"><b>U spreekt met degene die beslist</b><span>Geen fonds of commissie op de achtergrond. U weet snel waar u aan toe bent.</span></div>
+      <div class="proof-item"><b>Duidelijk en discreet</b><span>Snel duidelijkheid, en geheimhouding vanaf het eerste gesprek.</span></div>
+    </div>
+  </section>
+
+  <!-- 3. Persoonlijke brief -->
+  <section id="over">
+    <div class="wrap">
+      <div class="letter">
+        <span class="eyebrow">Waarom ik dit doe</span>
+        <p>De mooiste bedrijven die ik heb leren kennen, waren zelden de grootste. Het waren bedrijven waar de eigenaar iedereen bij naam kende, waar klanten al twintig jaar terugkwamen en waar vakmanschap meer telde dan een mooie presentatie. Zo'n bedrijf wil ik zelf leiden.</p>
+        <p>In ruim vijf jaar bij McKinsey heb ik nauw samengewerkt met ondernemers, directeuren en hun teams om bedrijven te laten groeien en hun dagelijkse bedrijfsvoering te verbeteren.</p>
+        <p>Bij een technisch onderhoudsbedrijf leidde ik een traject om de dagelijkse operatie te verbeteren. Een meer centrale planning leek de logische oplossing, maar ervaren monteurs wezen ons op het belang van flexibiliteit en persoonlijk klantcontact. In plaats van de oorspronkelijke aanpak door te drukken, hebben we samen een werkwijze ontwikkeld die efficiënter was, zonder die sterke kanten te verliezen. Ik hielp de veranderingen daadwerkelijk door te voeren, met als resultaat een betere planning en tevredenere klanten.</p>
+        <p>Die ervaring heeft me geleerd dat goed leiderschap begint met luisteren naar de mensen die het bedrijf het beste kennen.</p>
+        <p>Als adviseur kwam ik binnen, dacht ik mee en vertrok ik weer. Nu wil ik zelf aan het roer staan.</p>
+        <p>Ik koop niet om door te verkopen. Ik koop om te blijven.</p>
+        <div class="sign">
+          <div class="sig">Teun</div>
+          <small>Teun de Planque · Parkhaven Bedrijfsopvolging</small>
+        </div>
+      </div>
+      <ul class="facts">
+        <li><b>Ruim 5 jaar</b>McKinsey &amp; Company, Associate Partner</li>
+        <li><b>Opleiding</b>techniek en bedrijfskunde, Stanford University</li>
+        <li><b>Heel Nederland</b>ik kom graag bij u langs</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4. Wat ik zoek -->
+  <section id="zoek" class="alt">
+    <div class="wrap split">
+      <div>
+        <span class="eyebrow">Wat ik zoek</span>
+        <h2>Een gezond bedrijf, een eigenaar die verder kijkt</h2>
+        <p class="lead">Ik zoek een stabiel, winstgevend bedrijf met een sterke positie in de markt en een team dat het verschil maakt.</p>
+        <p>Twijfelt u of uw bedrijf past? Bel gerust.</p>
+      </div>
+      <div class="card">
+        <dl class="criteria">
+          <dt>Sector</dt>
+          <dd>Bij voorkeur bedrijven met zakelijke klanten, in een markt die niet sterk meebeweegt met de economie. Bijvoorbeeld technische dienstverlening, onderhoud en inspectie, IT-dienstverlening of gespecialiseerde handel</dd>
+          <dt>Omvang</dt>
+          <dd>EBITDA (bedrijfsresultaat vóór afschrijvingen) van circa €0,5 tot €2 miljoen; omzet indicatief €2 tot €15 miljoen</dd>
+          <dt>Belang</dt>
+          <dd>Bij voorkeur alle aandelen of een ruime meerderheid</dd>
+          <dt>Locatie</dt>
+          <dd>Gevestigd in Nederland</dd>
+          <dt>Kenmerken</dt>
+          <dd>Terugkerende omzet, een gespreide klantenbasis, een stabiel team en een goede reputatie</dd>
+          <dt>Situatie</dt>
+          <dd>Een eigenaar die nadenkt over opvolging</dd>
+        </dl>
+        <div class="less">
+          <h3>Wat minder past</h3>
+          <ul>
+            <li>Bedrijven in een herstelsituatie</li>
+            <li>Sterk conjunctuurgevoelige, projectmatige of seizoensgebonden omzet</li>
+            <li>Grote afhankelijkheid van één klant</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Financiering -->
+  <section id="financiering" class="finance">
+    <div class="wrap split">
+      <div>
+        <span class="eyebrow">Financiering en besluitvorming</span>
+        <h2>Eigen middelen, eigen beslissing</h2>
+      </div>
+      <div class="finance-text">
+        <p>Ik heb ruim €1,5 miljoen aan eigen middelen beschikbaar, aangevuld met bankfinanciering en eventueel een verkoperslening. Met banken heb ik al gesproken over overnamefinanciering.</p>
+        <p>Ik investeer voor eigen rekening, zonder fonds of externe aandeelhouders, en neem zelf de beslissingen. Daardoor kan ik snel handelen.</p>
+        <p>Mijn financiële middelen kan ik op verzoek aantonen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Na de overname -->
+  <section id="roer" class="alt">
+    <div class="wrap helm-grid">
+      <figure class="helm-photo">
+        <img src="assets/werkvloer-1400.webp" srcset="assets/werkvloer-800.webp 800w, assets/werkvloer-1400.webp 1400w" sizes="(max-width:900px) 90vw, 530px" alt="Teun de Planque in gesprek op een werkvloer" width="1400" height="786" loading="lazy" decoding="async">
+      </figure>
+      <div>
+        <span class="eyebrow">Na de overname</span>
+        <h2>Zelf aan het roer</h2>
+        <p>Na de overname ga ik zelf dagelijks leidinggeven aan het bedrijf. Mijn eerste stap is om de medewerkers, klanten en dagelijkse operatie goed te leren kennen en te begrijpen wat het bedrijf succesvol maakt.</p>
+          <p>Die sterke basis wil ik behouden en daarop voortbouwen. Waar kansen liggen voor verbetering, wil ik die samen met het bestaande team benutten.</p>
+          <p>Ik zoek geen bedrijf om op afstand te bezitten, maar een onderneming waar ik voor de lange termijn zelf mijn tijd, energie en kapitaal in steek.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5b. Wat u mag verwachten -->
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">Wat u van mij mag verwachten</span>
+      <h2>Uw levenswerk, in goede handen</h2>
+      <div class="promises">
+        <div class="promise"><h3>Uw mensen en uw naam</h3><p>Het team, de cultuur en de naam die klanten kennen, zijn de basis waarop ik voortbouw.</p></div>
+        <div class="promise"><h3>We spreken de overdracht samen af</h3><p>Hoe lang u betrokken blijft en wanneer we het team informeren, leggen we samen vast.</p></div>
+        <div class="promise"><h3>Een eerlijk bod</h3><p>Onderbouwd en transparant. Nieuwe inzichten uit het onderzoek bespreek ik direct met u.</p></div>
+        <div class="promise"><h3>Discreet, met één aanspreekpunt</h3><p>Niemand hoort iets voordat u dat wilt. U heeft van begin tot eind met mij te maken.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Werkwijze -->
+  <section id="werkwijze" class="alt">
+    <div class="wrap">
+      <span class="eyebrow">Hoe het werkt</span>
+      <h2>Vijf stappen, zonder druk</h2>
+      <ol class="steps">
+        <li><div><h3>Kennismaking</h3><p>Een vrijblijvend gesprek, bij u op locatie of telefonisch.</p></div><span class="time">ongeveer een uur</span></li>
+        <li><div><h3>Vertrouwelijkheid</h3><p>We tekenen een geheimhoudingsverklaring voordat u cijfers deelt.</p></div><span class="time">binnen enkele dagen</span></li>
+        <li><div><h3>Indicatief bod</h3><p>Een concreet, onderbouwd voorstel, inclusief de financiering en eventuele voorwaarden.</p></div><span class="time">2 tot 3 weken na de eerste cijfers</span></li>
+        <li><div><h3>Onderzoek</h3><p>Samen met mijn adviseurs, met zo min mogelijk belasting voor u en uw team.</p></div><span class="time">indicatief 8 tot 12 weken</span></li>
+        <li><div><h3>Overdracht</h3><p>Afronding bij de notaris, daarna de overdracht zoals afgesproken.</p></div><span class="time">in overleg</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 7. Veelgestelde vragen -->
+  <section id="vragen">
+    <div class="wrap faq">
+      <span class="eyebrow">Veelgestelde vragen</span>
+      <h2>Vragen die ondernemers vaak hebben</h2>
+      <details>
+        <summary>Wat gebeurt er met mijn medewerkers?</summary>
+        <p>Zij zijn de reden dat het bedrijf goed is. Ik neem het over om het verder te brengen, niet om het op te knippen of te laten opgaan in een groot concern.</p>
+      </details>
+      <details>
+        <summary>Hoe lang blijf ik betrokken, en hoe verloopt de overdracht?</summary>
+        <p>Dat spreken we samen af. Sommige ondernemers stoppen na een paar maanden, anderen blijven nog een tijd betrokken.</p>
+      </details>
+      <details>
+        <summary>Waarom niet gewoon verkopen aan een concurrent of een fonds?</summary>
+        <p>Dat kan een goede keuze zijn. Een concurrent integreert uw bedrijf vaak in het zijne, en een fonds verkoopt het meestal na enkele jaren door. Bij mij blijft het zelfstandig, met één eigenaar die er dagelijks leiding aan geeft.</p>
+      </details>
+      <details>
+        <summary>Moet ik alles in één keer verkopen?</summary>
+        <p>Een volledige overdracht is mogelijk. Als het past, kunt u ook tijdelijk een klein belang houden of een deel van de koopprijs later ontvangen.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- 8. Voor adviseurs -->
+  <section id="adviseurs" class="advisers">
+    <div class="wrap adv-grid">
+      <div>
+        <span class="eyebrow">Voor adviseurs en bemiddelaars</span>
+        <h2>Een snelle, betrouwbare partij aan tafel</h2>
+        <p>Begeleidt u een ondernemer die het bedrijf wil overdragen? Stuur mij gerust een anonieme teaser. Gevoelige informatie graag na geheimhouding; contact met uw cliënt altijd in overleg.</p>
+        <a class="btn ghost" href="mailto:teun@parkhavenopvolging.nl?subject=Teaser%20voor%20Parkhaven">Mail een anonieme teaser</a>
+      </div>
+      <ul class="checks">
+        <li>Reactie binnen 24 uur op uw teaser</li>
+        <li>Binnen één week na de eerste informatie een helder ja of nee</li>
+        <li>Ruim €1,5 miljoen eigen middelen, aantoonbaar op verzoek</li>
+        <li>Eén beslisser, zonder fonds of externe aandeelhouders</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 9. Contact -->
+  <section id="contact" class="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <span class="eyebrow">Contact</span>
+        <h2>Laten we kennismaken</h2>
+        <p class="lead">Bel of mail mij gerust, ook als u nog maar net nadenkt over opvolging.</p>
+      </div>
+      <div class="contact-lines">
+        <a href="tel:+31623000934">06 23 00 09 34</a>
+        <a href="mailto:teun@parkhavenopvolging.nl">teun@parkhavenopvolging.nl</a>
+        <a class="li" href="https://www.linkedin.com/in/teundeplanque" target="_blank" rel="noopener">LinkedIn-profiel →</a>
+        <small>Teun de Planque · Parkhaven Bedrijfsopvolging</small>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Parkhaven Bedrijfsopvolging</span>
+  </div>
+</footer>
+
+</body>
+</html>
