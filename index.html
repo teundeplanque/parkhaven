@@ -105,7 +105,7 @@
   .letter p{font-family:var(--serif);font-size:21px;line-height:1.7;color:#24323d}
   .letter .salut{font-style:italic}
   .sign{margin-top:30px}
-  .sign .sig{font-family:var(--serif);font-style:italic;font-size:38px;color:var(--ink);line-height:1}
+  .sign .sig{display:block;height:86px;width:auto;color:var(--ink)}
   .sign small{display:block;font-family:var(--sans);font-size:14.5px;color:var(--muted);margin-top:8px}
 
   .wide-photo{margin:8px auto 40px;max-width:var(--max)}
@@ -220,7 +220,8 @@
   }
   @media print{header{position:static}.proof,.contact{color:#000;background:#fff}}
 </style>
-<script defer src="https://cloud.umami.is/script.js" data-website-id="24384776-9edc-4bda-af31-66932829365b"></script>
+<script>try{var q=location.search;if(q.indexOf("umami=uit")>-1){localStorage.setItem("umami.disabled","1");alert("Umami staat uit op dit apparaat")}else if(q.indexOf("umami=aan")>-1){localStorage.removeItem("umami.disabled");alert("Umami staat weer aan op dit apparaat")}}catch(e){}</script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="24384776-9edc-4bda-af31-66932829365b" data-domains="parkhavenopvolging.nl,www.parkhavenopvolging.nl"></script>
 </head>
 <body>
 
@@ -238,7 +239,7 @@
       <li><a href="#vragen">Vragen</a></li>
       <li><a href="#adviseurs">Adviseurs</a></li>
     </ul>
-    <a class="call" href="tel:+31623000934"><span class="long">Bel 06 23 00 09 34</span><span class="short">Bel Teun</span></a>
+    <a class="call" href="tel:+31623000934" data-umami-event="Bellen" data-umami-event-plek="menu"><span class="long">Bel 06 23 00 09 34</span><span class="short">Bel Teun</span></a>
   </div>
 </header>
 
@@ -251,11 +252,11 @@
         <h1>Ik zoek één bedrijf om zelf te leiden. Voor de lange termijn.</h1>
         <p class="lead">Ik ben Teun de Planque. Ik neem één gezond Nederlands bedrijf over van een ondernemer die nadenkt over opvolging. Als opvolger die blijft, ook over vijf of tien jaar.</p>
         <div class="cta">
-          <a class="btn" href="tel:+31623000934">Bel mij direct<span class="btn-num"> · 06 23 00 09 34</span></a>
-          <a class="btn ghost" href="mailto:teun@parkhavenopvolging.nl">Stuur een e-mail</a>
+          <a class="btn" href="tel:+31623000934" data-umami-event="Bellen" data-umami-event-plek="bovenaan">Bel mij direct<span class="btn-num"> · 06 23 00 09 34</span></a>
+          <a class="btn ghost" href="mailto:teun@parkhavenopvolging.nl?subject=Kennismaking%20via%20parkhavenopvolging.nl" data-umami-event="Mailen" data-umami-event-plek="bovenaan">Stuur een e-mail</a>
         </div>
         <p class="note">Ik neem zelf op. Een eerste gesprek is vrijblijvend en vertrouwelijk.</p>
-        <p class="quick"><b>Zoekprofiel</b> winst (EBITDA) € 0,5 tot 2 miljoen · bij voorkeur zakelijke klanten · heel Nederland · <a href="#financiering">eigen vermogen plus bankfinanciering</a> · <a href="#zoek">alle criteria</a></p>
+        <p class="quick"><b>Zoekprofiel</b> winst (EBITDA) € 0,5 tot 1,5 miljoen · bij voorkeur zakelijke klanten · heel Nederland · <a href="#financiering">eigen vermogen plus bankfinanciering</a> · <a href="#zoek">alle criteria</a></p>
       </div>
       <figure class="portrait" style="margin:0">
         <img src="assets/teun-960.webp" srcset="assets/teun-600.webp 600w, assets/teun-960.webp 960w" sizes="(max-width:900px) 90vw, 430px" alt="Teun de Planque aan het water in de haven" width="960" height="1200" fetchpriority="high" style="position:absolute;inset:0">
@@ -284,13 +285,13 @@
         <p>Als adviseur kwam ik binnen, dacht ik mee en vertrok ik weer. Nu wil ik zelf aan het roer staan.</p>
         <p>Ik koop niet om door te verkopen. Ik koop om te blijven.</p>
         <div class="sign">
-          <div class="sig">Teun</div>
+          <svg class="sig" viewBox="0 0 1200 1348" role="img" aria-label="Teun"><path d="M38 1320C33 1318 33 1316 34 1308C37 1296 39 1293 49 1287C53 1284 55 1281 55 1278C55 1277 57 1274 59 1272C62 1268 63 1266 63 1263C63 1259 67 1255 72 1255C74 1255 77 1254 78 1253C85 1249 87 1247 92 1243C94 1241 99 1237 101 1236C105 1232 113 1226 122 1218C125 1215 129 1212 132 1211C134 1210 137 1207 138 1205C140 1203 143 1200 145 1199C147 1197 150 1195 152 1193C153 1191 156 1188 158 1186C178 1166 188 1157 192 1155C195 1153 210 1139 219 1127C222 1124 226 1119 230 1115C233 1111 237 1106 240 1103C242 1100 247 1095 249 1092C252 1089 255 1085 256 1082C257 1080 261 1075 266 1071C270 1067 274 1062 275 1060C276 1057 280 1053 283 1049C288 1045 290 1042 291 1038C294 1030 304 1018 317 1007C320 1005 323 1001 325 995C328 990 331 985 334 983C336 981 340 975 344 967C348 957 351 953 355 949C362 943 365 938 367 929C368 925 370 922 373 919C375 917 379 913 380 910C382 906 385 901 388 898C395 890 398 887 400 882C401 880 403 878 404 877C404 876 406 874 408 871C409 868 411 866 412 865C412 864 416 858 420 851C425 840 427 838 435 830C445 820 447 817 447 812C447 808 449 803 451 801C452 800 455 796 458 791C460 786 463 782 463 781C464 780 466 778 467 776C468 773 471 769 474 767C478 762 478 761 479 754C480 751 481 748 482 746C484 744 485 741 485 740C485 739 486 737 488 735C489 733 491 730 491 728C492 727 493 723 495 722C496 720 502 709 508 698C513 687 519 678 519 677C520 676 522 674 523 672C524 669 527 666 529 663C532 660 533 658 533 656C533 654 534 651 536 648C538 645 539 642 539 640C539 637 540 635 543 632C545 630 547 627 547 625C548 623 549 619 551 618C555 613 559 604 559 600C559 596 561 591 565 588C569 584 571 580 571 576C571 573 572 569 574 565C576 561 578 556 579 554C580 550 582 543 585 536C586 533 587 530 587 530C587 529 588 526 589 525C590 523 591 519 591 516C593 504 594 501 597 497C601 493 603 488 603 484C603 482 604 479 605 476C606 472 607 469 607 462C607 452 607 452 611 447C615 443 615 442 615 438C615 434 616 430 617 428C618 425 619 421 619 414C619 409 619 403 620 401C624 389 604 381 588 387C585 388 581 389 580 389C578 389 575 390 572 392C567 395 567 395 562 394C558 393 557 393 553 395C549 396 548 396 544 395C540 394 539 394 535 395C529 398 517 397 512 395C506 392 483 392 477 395C469 398 449 388 432 372C426 366 419 360 418 359C416 357 415 355 415 353C415 351 414 347 413 345C412 341 412 339 413 337C414 335 415 330 415 326C416 319 417 315 421 304C422 300 423 296 423 290C423 280 423 280 426 277C428 275 435 268 442 262C451 252 467 246 475 249C480 250 480 250 485 248C491 247 494 247 501 253C505 255 509 256 514 254C520 252 544 258 564 267C569 269 574 271 575 271C580 271 596 277 599 279C600 281 607 284 613 288C624 293 629 297 645 312C649 316 650 317 653 316C655 316 658 316 661 317C665 318 665 318 677 313C692 305 697 304 706 303C712 302 715 301 724 297C735 292 735 292 740 293C746 294 759 289 765 283C768 281 772 279 776 279C780 279 799 270 801 268C802 267 804 265 806 264C809 263 813 260 815 257C820 253 820 253 825 253C829 254 830 254 833 252C836 249 847 243 849 243C850 243 853 241 855 239C859 236 861 235 864 235C866 235 869 234 872 233C874 232 877 231 878 231C881 231 907 218 909 215C910 214 914 212 918 211C923 210 926 208 930 204C934 201 937 199 938 199C938 199 941 198 944 197C946 196 950 195 951 195C953 194 957 191 961 187C967 182 970 180 973 179C975 178 978 177 979 175C984 168 987 165 993 163C998 162 1000 160 1014 148C1017 146 1020 143 1022 143C1024 142 1029 140 1032 137C1040 130 1048 123 1054 118C1057 116 1060 113 1061 111C1062 109 1063 108 1063 108C1064 108 1069 103 1076 97C1082 90 1089 84 1091 83C1096 81 1110 69 1115 62C1117 60 1120 53 1124 46C1133 28 1139 27 1150 39C1158 47 1158 49 1153 60C1151 65 1149 70 1149 72C1149 77 1147 81 1137 91C1131 96 1126 102 1125 104C1124 107 1121 111 1118 114C1108 126 1104 130 1102 134C1101 136 1099 139 1097 140C1096 141 1087 149 1078 158C1068 167 1059 176 1056 177C1054 178 1052 180 1051 181C1050 182 1046 184 1043 185C1039 186 1036 188 1031 193C1027 196 1023 200 1020 201C1018 202 1014 205 1011 209C1007 212 1003 216 997 218C992 221 987 224 985 226C983 229 978 232 973 235C968 237 964 240 963 240C962 241 960 243 957 244C955 246 952 248 951 249C950 250 946 252 943 253C940 254 936 256 933 259C929 262 926 264 923 265C920 266 913 269 907 272C901 275 895 277 894 277C893 277 889 279 884 281C879 283 874 285 872 285C868 285 864 287 860 291C858 294 855 296 851 297C848 297 845 299 843 300C838 305 820 313 816 313C812 313 808 315 804 319C800 324 796 325 788 325C783 325 779 326 776 327C769 330 762 332 758 333C756 334 749 336 743 340C735 343 731 345 728 345C726 345 721 346 716 349C709 353 707 353 700 353C693 353 682 357 680 360C679 361 677 362 675 364C673 365 671 367 670 368C670 370 668 373 667 376C665 382 664 404 666 410C667 414 666 421 663 428C662 431 661 434 661 436C661 438 660 441 659 443C658 445 657 450 657 454C656 462 652 475 649 478C646 482 645 485 645 488C645 490 643 495 641 500C638 507 637 510 637 514C637 517 636 522 635 524C631 536 629 541 628 547C628 549 627 553 625 554C622 558 617 567 617 570C617 571 615 576 613 580C611 585 609 589 609 590C609 591 608 594 607 596C606 599 605 602 605 604C605 609 603 612 598 617C593 623 589 631 589 638C589 644 587 649 585 651C584 652 581 656 579 661C576 666 573 671 570 673C566 677 561 687 561 692C561 697 559 700 554 705C552 708 550 711 549 713C549 717 543 729 541 731C540 732 538 735 536 737C535 739 533 743 531 745C530 747 529 750 529 751C529 758 524 770 520 773C515 777 512 782 509 790C508 794 506 798 505 799C504 800 501 804 498 809C496 814 493 818 492 819C490 821 485 832 485 834C485 835 483 838 480 841C476 845 475 847 475 849C475 853 471 861 467 865C464 867 462 870 461 872C460 875 457 879 454 881C452 884 450 887 449 891C448 894 446 898 445 899C444 900 442 903 440 905C439 907 437 911 435 913C432 915 430 918 429 920C428 923 425 926 424 928C417 937 411 944 405 950C401 954 398 959 397 961C396 966 391 977 387 980C383 984 381 988 381 992C381 997 379 999 374 1001C372 1002 369 1004 368 1007C366 1009 365 1011 364 1011C362 1012 358 1021 357 1026C356 1028 355 1031 353 1032C347 1036 339 1045 336 1049C335 1052 333 1054 333 1055C332 1056 330 1058 329 1061C327 1064 325 1066 325 1067C324 1068 322 1070 320 1073C318 1077 315 1081 309 1085C307 1086 306 1089 305 1091C304 1094 302 1097 299 1100C296 1103 292 1109 290 1114C286 1121 277 1132 270 1136C268 1137 266 1140 265 1143C264 1145 262 1148 259 1149C257 1151 241 1167 222 1185C201 1206 188 1219 185 1221C182 1222 179 1225 178 1227C176 1229 173 1232 171 1233C169 1235 166 1237 164 1239C163 1241 159 1243 157 1245C155 1246 147 1252 141 1258C134 1265 128 1271 125 1272C122 1274 120 1276 119 1276C118 1277 116 1279 113 1281C111 1282 105 1286 101 1290C97 1295 92 1299 90 1300C87 1301 83 1305 79 1309C69 1318 48 1324 38 1320ZM404 1315C400 1314 397 1313 390 1313C380 1313 377 1312 371 1307C369 1306 366 1305 364 1305C359 1305 355 1303 350 1297C338 1283 331 1277 329 1275C327 1274 325 1272 324 1269C322 1266 320 1264 319 1263C317 1261 311 1249 311 1246C311 1245 309 1241 308 1237C303 1229 303 1227 306 1224C307 1222 308 1220 308 1217C308 1214 309 1212 311 1210C313 1208 315 1203 315 1201C316 1198 318 1194 319 1193C322 1191 327 1180 327 1176C327 1175 328 1171 329 1168C330 1165 331 1161 331 1159C331 1154 337 1143 342 1140C346 1137 346 1136 347 1129C348 1127 349 1124 351 1122C352 1120 355 1117 356 1114C357 1112 359 1110 360 1109C360 1108 362 1106 363 1104C366 1099 369 1094 374 1089C379 1084 380 1083 385 1078C397 1066 407 1062 416 1065C422 1067 423 1067 426 1066C432 1063 449 1065 456 1069C467 1075 479 1097 476 1106C475 1108 475 1113 475 1117C475 1123 475 1124 472 1128C470 1130 469 1134 469 1135C469 1140 463 1156 461 1159C458 1162 453 1172 453 1174C453 1177 448 1186 445 1188C444 1189 436 1196 428 1204C419 1212 411 1220 408 1221C406 1222 402 1225 399 1228C396 1232 391 1236 387 1238C376 1243 376 1246 384 1251C387 1253 391 1255 393 1257C395 1258 398 1259 400 1259C402 1259 407 1260 412 1263C422 1268 442 1269 452 1265C455 1264 459 1263 460 1263C462 1263 468 1261 476 1257C484 1253 489 1251 492 1251C497 1251 511 1244 514 1240C520 1233 521 1232 526 1231C529 1230 532 1228 539 1222C544 1217 550 1212 552 1211C555 1209 557 1208 557 1207C557 1200 577 1196 583 1201C586 1205 585 1215 581 1219C578 1221 574 1229 573 1235C571 1242 543 1271 532 1277C530 1278 528 1280 527 1281C525 1283 481 1305 478 1305C477 1305 473 1307 468 1309C460 1313 459 1313 450 1313C443 1313 440 1313 436 1315C430 1318 409 1318 404 1315ZM848 1291C846 1290 842 1289 840 1289C836 1289 831 1287 829 1285C828 1284 826 1282 823 1281C817 1277 810 1270 806 1262C804 1258 801 1253 800 1251C797 1248 797 1247 798 1243C798 1238 797 1235 790 1228C785 1223 777 1225 773 1232C770 1238 754 1254 749 1256C747 1258 743 1260 741 1262C739 1265 736 1267 734 1268C731 1269 728 1272 726 1273C724 1275 721 1276 719 1276C717 1277 713 1278 710 1278C707 1279 704 1279 702 1278C700 1278 698 1277 696 1277C691 1277 679 1272 674 1268C671 1265 667 1262 665 1261C661 1257 659 1253 659 1247C659 1242 656 1239 649 1240C643 1240 642 1239 645 1235C646 1232 646 1232 645 1227C644 1225 643 1221 643 1220C643 1218 642 1215 641 1212C640 1210 639 1206 639 1202C639 1199 638 1195 637 1192C634 1185 634 1160 638 1155C639 1154 641 1151 642 1150C643 1148 645 1145 646 1143C648 1139 649 1135 651 1122C652 1106 669 1102 674 1116C675 1119 678 1125 680 1130C684 1139 685 1140 682 1146C681 1150 681 1168 683 1179C683 1182 684 1187 684 1189C686 1197 686 1198 689 1201C691 1203 692 1207 693 1208C695 1218 709 1226 717 1222C720 1220 752 1189 754 1186C754 1184 755 1181 755 1179C755 1176 756 1175 765 1167C768 1165 771 1161 773 1155C785 1133 797 1129 811 1144C819 1152 819 1152 819 1156C818 1159 818 1162 819 1165C820 1167 821 1171 821 1172C821 1174 822 1177 823 1180C824 1182 825 1185 825 1186C825 1187 827 1191 829 1196C833 1205 836 1212 837 1218C838 1223 842 1231 844 1233C845 1234 847 1236 848 1238C851 1244 854 1247 864 1258C877 1272 877 1282 863 1289C855 1294 854 1294 848 1291ZM1138 1290C1135 1288 1130 1286 1128 1284C1127 1283 1124 1281 1123 1280C1118 1277 1115 1269 1115 1262C1115 1259 1114 1255 1113 1252C1112 1249 1111 1246 1111 1242C1111 1237 1111 1236 1107 1231C1104 1227 1104 1225 1103 1219C1102 1209 1102 1208 1088 1201C1081 1197 1073 1193 1071 1190C1068 1188 1065 1186 1063 1185C1062 1185 1058 1184 1056 1183C1053 1182 1049 1181 1046 1181C1041 1181 1038 1180 1032 1177C1020 1171 1015 1173 1008 1185C1007 1187 1005 1191 1003 1193C1002 1195 1001 1197 1001 1198C1001 1199 1000 1203 998 1206C996 1210 995 1214 995 1215C995 1217 994 1219 992 1221C991 1223 989 1226 989 1228C986 1237 973 1247 966 1244C964 1244 961 1243 960 1243C945 1243 943 1240 943 1218C944 1208 944 1198 944 1195C944 1190 944 1189 947 1186C951 1181 951 1180 951 1168C951 1160 952 1158 954 1155C955 1154 957 1151 958 1149C958 1147 960 1144 960 1143C963 1138 970 1135 980 1135C985 1135 989 1134 992 1133C994 1132 997 1131 998 1131C999 1131 1003 1129 1007 1128C1015 1124 1016 1123 1021 1126C1023 1126 1026 1127 1028 1127C1030 1127 1033 1128 1036 1129C1040 1131 1043 1131 1054 1131C1066 1131 1068 1131 1072 1133C1075 1134 1078 1135 1080 1135C1081 1135 1085 1136 1088 1137C1091 1138 1094 1139 1096 1139C1101 1139 1105 1141 1111 1147C1114 1151 1118 1154 1120 1155C1128 1159 1151 1183 1153 1189C1155 1196 1158 1203 1160 1205C1161 1206 1163 1208 1164 1210C1165 1213 1168 1216 1169 1218C1172 1221 1173 1224 1170 1229C1168 1234 1169 1242 1171 1248C1173 1254 1173 1254 1171 1260C1170 1263 1169 1267 1169 1271C1169 1277 1161 1286 1152 1291C1146 1294 1146 1294 1138 1290ZM381 1188C392 1183 404 1170 407 1157C408 1154 410 1150 411 1149C414 1147 423 1128 423 1126C423 1121 422 1120 417 1122C413 1124 412 1124 408 1123C402 1122 401 1122 397 1128C396 1130 391 1136 386 1141C379 1149 373 1158 373 1162C373 1163 371 1168 369 1172C361 1188 366 1195 381 1188ZM552 349C555 348 558 347 564 347C573 347 576 345 579 340C581 335 582 334 585 337C588 338 593 338 593 337C595 333 585 326 576 325C574 324 570 322 568 319C562 314 557 311 549 309C546 308 543 306 542 305C540 303 535 301 532 301C528 301 524 299 521 296C512 288 495 291 487 304C484 308 483 310 480 310C479 310 475 311 472 311C466 313 463 311 463 304C463 300 464 298 471 292C474 290 475 285 473 284C470 283 463 286 461 289C460 290 457 293 455 294C448 298 448 303 454 311C460 317 461 319 461 325C461 332 460 331 472 340C479 347 480 347 492 347C502 347 505 347 508 349C512 351 515 351 530 351C545 351 548 351 552 349Z" fill="currentColor"/></svg>
           <small>Teun de Planque · Parkhaven Bedrijfsopvolging</small>
         </div>
       </div>
       <ul class="facts">
         <li><b>Ruim 5 jaar</b>McKinsey &amp; Company, Associate Partner</li>
-        <li><b>Opleiding</b>techniek en bedrijfskunde, Stanford University</li>
+        <li><b>Techniek en bedrijfskunde</b>gestudeerd aan Stanford University</li>
         <li><b>Heel Nederland</b>ik kom graag bij u langs</li>
       </ul>
     </div>
@@ -310,7 +311,7 @@
           <dt>Sector</dt>
           <dd>Bij voorkeur bedrijven met zakelijke klanten, in een markt die niet sterk meebeweegt met de economie. Bijvoorbeeld technische dienstverlening, onderhoud en inspectie, IT-dienstverlening of gespecialiseerde handel</dd>
           <dt>Omvang</dt>
-          <dd>EBITDA (bedrijfsresultaat vóór afschrijvingen) van circa €0,5 tot €2 miljoen; omzet indicatief €2 tot €15 miljoen</dd>
+          <dd>EBITDA (bedrijfsresultaat vóór afschrijvingen) van circa €0,5 tot €1,5 miljoen; omzet indicatief €2 tot €10 miljoen</dd>
           <dt>Belang</dt>
           <dd>Bij voorkeur alle aandelen of een ruime meerderheid</dd>
           <dt>Locatie</dt>
@@ -398,20 +399,32 @@
       <span class="eyebrow">Veelgestelde vragen</span>
       <h2>Vragen die ondernemers vaak hebben</h2>
       <details>
+        <summary>Ik weet nog niet of ik wil verkopen. Kan ik toch met u praten?</summary>
+        <p>Graag. Veel ondernemers oriënteren zich lang voordat ze een besluit nemen. Een gesprek is vrijblijvend, vertrouwelijk en kost u niets. Ook het onderzoek en mijn adviseurs betaal ik zelf; alleen een adviseur die u zelf inschakelt, zoals uw accountant of een bemiddelaar, is voor uw rekening.</p>
+      </details>
+      <details>
         <summary>Wat gebeurt er met mijn medewerkers?</summary>
-        <p>Zij zijn de reden dat het bedrijf goed is. Ik neem het over om het verder te brengen, niet om het op te knippen of te laten opgaan in een groot concern.</p>
+        <p>Zij zijn de reden dat het bedrijf goed is. Bij een overname blijven arbeidscontracten en arbeidsvoorwaarden gewoon gelden. Ik neem het bedrijf over om het verder te brengen, niet om het op te knippen of te laten opgaan in een groot concern.</p>
       </details>
       <details>
-        <summary>Hoe lang blijf ik betrokken, en hoe verloopt de overdracht?</summary>
-        <p>Dat spreken we samen af. Sommige ondernemers stoppen na een paar maanden, anderen blijven nog een tijd betrokken.</p>
+        <summary>Hoe weet ik dat mijn bedrijf goed blijft draaien?</summary>
+        <p>Wat vandaag goed werkt, blijft zo. Het eerste jaar gebruik ik vooral om te leren: van u, van het team en van de klanten. Ik ben elke dag in het bedrijf aanwezig. Uw belangrijkste klanten bezoeken we samen, zodat ze mij via u leren kennen. De overname financier ik met een stevig eigen deel en een lening die het bedrijf goed kan dragen, zodat er ruimte blijft om te investeren. En omdat ik mijn eigen geld inzet, wil ik net zo graag als u dat het goed gaat.</p>
       </details>
       <details>
-        <summary>Waarom niet gewoon verkopen aan een concurrent of een fonds?</summary>
-        <p>Dat kan een goede keuze zijn. Een concurrent integreert uw bedrijf vaak in het zijne, en een fonds verkoopt het meestal na enkele jaren door. Bij mij blijft het zelfstandig, met één eigenaar die er dagelijks leiding aan geeft.</p>
+        <summary>Hoe lang blijf ik betrokken?</summary>
+        <p>Dat bepaalt u mee. Vaak gaat het om een overdracht van zes maanden tot een jaar, bijvoorbeeld eerst een paar dagen per week en later als vraagbaak. Sommige ondernemers blijven graag langer betrokken, anderen ronden liever snel af. Beide kan.</p>
+      </details>
+      <details>
+        <summary>Hoe komt u tot een prijs?</summary>
+        <p>Ik kijk vooral naar de winst die het bedrijf structureel maakt, en naar wat het bedrijf sterk of kwetsbaar maakt, zoals het team en de spreiding van klanten. Mijn berekening deel ik met u, zodat u ziet hoe ik tot mijn bod kom. Uw accountant of adviseur kan gerust meekijken.</p>
       </details>
       <details>
         <summary>Moet ik alles in één keer verkopen?</summary>
-        <p>Een volledige overdracht is mogelijk. Als het past, kunt u ook tijdelijk een klein belang houden of een deel van de koopprijs later ontvangen.</p>
+        <p>Nee. Een volledige overdracht kan, maar u kunt ook tijdelijk een klein belang houden of een deel van de koopprijs later ontvangen. Heeft u het bedrijfspand in eigendom, dan kunt u dat ook houden en aan het bedrijf verhuren.</p>
+      </details>
+      <details>
+        <summary>Waarom niet verkopen aan een concurrent of een fonds?</summary>
+        <p>Dat kan een goede keuze zijn. Een concurrent voegt uw bedrijf vaak samen met het zijne, en een fonds verkoopt het meestal na enkele jaren door. Bij mij blijft het zelfstandig, onder de eigen naam, met één eigenaar die er elke dag leiding aan geeft.</p>
       </details>
     </div>
   </section>
@@ -423,12 +436,11 @@
         <span class="eyebrow">Voor adviseurs en bemiddelaars</span>
         <h2>Een snelle, betrouwbare partij aan tafel</h2>
         <p>Begeleidt u een ondernemer die het bedrijf wil overdragen? Stuur mij gerust een anonieme teaser. Gevoelige informatie graag na geheimhouding; contact met uw cliënt altijd in overleg.</p>
-        <a class="btn ghost" href="mailto:teun@parkhavenopvolging.nl?subject=Teaser%20voor%20Parkhaven">Mail een anonieme teaser</a>
+        <a class="btn ghost" href="mailto:teun@parkhavenopvolging.nl?subject=Teaser%20voor%20Parkhaven" data-umami-event="Teaser mailen">Mail een anonieme teaser</a>
       </div>
       <ul class="checks">
         <li>Reactie binnen 24 uur op uw teaser</li>
         <li>Binnen één week na de eerste informatie een helder ja of nee</li>
-        <li>Ruim €1,5 miljoen eigen middelen, aantoonbaar op verzoek</li>
         <li>Eén beslisser, zonder fonds of externe aandeelhouders</li>
       </ul>
     </div>
@@ -443,9 +455,9 @@
         <p class="lead">Bel of mail mij gerust, ook als u nog maar net nadenkt over opvolging.</p>
       </div>
       <div class="contact-lines">
-        <a href="tel:+31623000934">06 23 00 09 34</a>
-        <a href="mailto:teun@parkhavenopvolging.nl">teun@parkhavenopvolging.nl</a>
-        <a class="li" href="https://www.linkedin.com/in/teundeplanque" target="_blank" rel="noopener">LinkedIn-profiel →</a>
+        <a href="tel:+31623000934" data-umami-event="Bellen" data-umami-event-plek="contact">06 23 00 09 34</a>
+        <a href="mailto:teun@parkhavenopvolging.nl?subject=Kennismaking%20via%20parkhavenopvolging.nl" data-umami-event="Mailen" data-umami-event-plek="contact">teun@parkhavenopvolging.nl</a>
+        <a class="li" href="https://www.linkedin.com/in/teundeplanque" target="_blank" rel="noopener" data-umami-event="LinkedIn">LinkedIn-profiel →</a>
         <small>Teun de Planque · Parkhaven Bedrijfsopvolging</small>
       </div>
     </div>
