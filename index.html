@@ -80,6 +80,8 @@
   .hero h1{font-size:clamp(40px,4.8vw,56px);letter-spacing:-.01em;margin-bottom:26px}
   .hero .lead{max-width:34em;margin-bottom:34px}
   .cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.cta .btn.wa{display:none}
+@media (max-width:600px){.cta .btn.wa{display:block}.cta .btn.mail{display:none}}
   .btn{display:inline-block;background:var(--ink);color:var(--paper);text-decoration:none;padding:15px 24px;border-radius:2px;font-size:16.5px;font-weight:500}
   .btn:hover{background:var(--ink-soft);color:var(--paper)}
   .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
@@ -254,10 +256,11 @@
         <h1>Ik zoek één bedrijf om zelf te leiden. Voor de lange termijn.</h1>
         <p class="lead">Ik ben Teun de Planque. Ik neem één gezond Nederlands bedrijf over van een ondernemer die nadenkt over opvolging. Als opvolger die blijft, ook over vijf of tien jaar.</p>
         <div class="cta">
-          <a class="btn" href="tel:+31623000934" data-umami-event="Bellen" data-umami-event-plek="bovenaan">Bel mij direct<span class="btn-num"> · 06 23 00 09 34</span></a>
-          <a class="btn ghost" href="mailto:teun@parkhavenopvolging.nl?subject=Kennismaking%20via%20parkhavenopvolging.nl" data-umami-event="Mailen" data-umami-event-plek="bovenaan">Stuur een e-mail</a>
+          <a class="btn wa" href="https://wa.me/31623000934?text=Goedendag%20Teun%2C%20ik%20heb%20uw%20website%20bekeken%20en%20zou%20graag%20kennismaken." target="_blank" rel="noopener" data-umami-event="WhatsApp" data-umami-event-plek="bovenaan">Stuur een WhatsApp</a>
+          <a class="btn mail" href="mailto:teun@parkhavenopvolging.nl?subject=Kennismaking%20via%20parkhavenopvolging.nl" data-umami-event="Mailen" data-umami-event-plek="bovenaan">Stuur een e-mail</a>
+          <a class="btn ghost" href="tel:+31623000934" data-umami-event="Bellen" data-umami-event-plek="bovenaan">Bel 06 23 00 09 34</a>
         </div>
-        <p class="note">Ik neem zelf op. Een eerste gesprek is vrijblijvend en vertrouwelijk.</p>
+        <p class="note">U krijgt altijd antwoord van mij zelf, binnen een dag. Een eerste gesprek is vrijblijvend en vertrouwelijk.</p>
         <p class="quick"><b>Zoekprofiel</b> winst (EBITDA) € 0,5 tot 1,5 miljoen · bij voorkeur zakelijke klanten · heel Nederland · <a href="#financiering">eigen vermogen plus bankfinanciering</a> · <a href="#zoek">alle criteria</a></p>
       </div>
       <figure class="portrait" style="margin:0">
@@ -456,11 +459,12 @@
       <div>
         <span class="eyebrow">Contact</span>
         <h2>Laten we kennismaken</h2>
-        <p class="lead">Bel of mail mij gerust, ook als u nog maar net nadenkt over opvolging.</p>
+        <p class="lead">Bel, app of mail mij gerust, ook als u nog maar net nadenkt over opvolging.</p>
       </div>
       <div class="contact-lines">
         <a href="tel:+31623000934" data-umami-event="Bellen" data-umami-event-plek="contact">06 23 00 09 34</a>
         <a href="mailto:teun@parkhavenopvolging.nl?subject=Kennismaking%20via%20parkhavenopvolging.nl" data-umami-event="Mailen" data-umami-event-plek="contact">teun@parkhavenopvolging.nl</a>
+        <a href="https://wa.me/31623000934?text=Goedendag%20Teun%2C%20ik%20heb%20uw%20website%20bekeken%20en%20zou%20graag%20kennismaken." target="_blank" rel="noopener" data-umami-event="WhatsApp" data-umami-event-plek="contact">WhatsApp-bericht</a>
         <a class="li" href="https://www.linkedin.com/in/teundeplanque" target="_blank" rel="noopener" data-umami-event="LinkedIn">LinkedIn-profiel →</a>
         <small>Teun de Planque · Parkhaven Bedrijfsopvolging</small>
       </div>
